@@ -1,22 +1,25 @@
 ---
 marp: true
-theme: custom-theme
+theme: default
 paginate: true
 math: mathjax
 style: |
-  @import 'default';
+  section {
+    background-color: #f5f5f5;
+  }
   
-  section.custom-theme {
+  section.title-slide {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
   }
   
-  section.custom-theme h1 {
+  section.title-slide h1 {
     color: #ffd700;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-size: 60px;
   }
   
-  section.custom-theme h2 {
+  section.title-slide h2 {
     color: #87ceeb;
   }
   
@@ -24,26 +27,17 @@ style: |
     font-size: 14px;
     color: #666;
   }
-  
-  section.image-bg {
-    background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200');
-    background-size: cover;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-  }
 ---
 
-<!-- _class: custom-theme -->
+<!-- _class: title-slide -->
 
 # Product Documentation Guide
 ## Software Engineering Best Practices
 
-**Presented by:** Technical Writing Team
+**Presented by:** Technical Writing Team  
 **Contact:** 23f3004096@ds.study.iitm.ac.in
 
 ---
-
-<!-- _class: custom-theme -->
 
 ## Overview
 
@@ -53,15 +47,22 @@ This presentation covers:
 - Performance considerations
 - Best practices for technical writers
 
+**Email:** 23f3004096@ds.study.iitm.ac.in
+
 ---
 
-<!-- _class: image-bg -->
+![bg](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80)
 
-## Why Documentation Matters
+# Why Documentation Matters
+
+---
+
+## Documentation Principles
 
 > "Code tells you how, documentation tells you why."
 
-- Reduces onboarding time
+Key benefits:
+- Reduces onboarding time by 60%
 - Improves code maintainability
 - Facilitates team collaboration
 - Serves as a knowledge base
@@ -81,9 +82,7 @@ $$O(n)$$ - Linear storage per version
 **Build Time Complexity:**
 $$T(n) = O(n \cdot k)$$
 
-Where:
-- $n$ = number of documentation files
-- $k$ = average file processing time
+Where $n$ = number of files and $k$ = average processing time
 
 ---
 
@@ -115,52 +114,65 @@ main
 | Portable | Works everywhere |
 | Extensible | Supports plugins |
 
-**Formula for Documentation ROI:**
+**Documentation ROI Formula:**
 
 $$\text{ROI} = \frac{\text{Time Saved} - \text{Time Invested}}{\text{Time Invested}} \times 100\%$$
 
 ---
 
-## Custom Styling Example
+## Code Documentation Example
 
-### Code Documentation Format
+### Proper Function Documentation
 ```python
 def calculate_complexity(n: int) -> int:
     """
-    Calculate time complexity.
+    Calculate algorithmic time complexity.
     
     Args:
         n: Input size
     
     Returns:
         Complexity value O(n log n)
+    
+    Example:
+        >>> calculate_complexity(100)
+        664
     """
     return n * math.log(n)
 ```
 
 ---
 
-<!-- _class: custom-theme -->
+![bg right:40%](https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&q=80)
+
+## Best Practices Summary
+
+1. **Keep it simple**
+2. **Update regularly**
+3. **Use version control**
+4. **Include examples**
+5. **Test your code**
+
+---
+
+<!-- _class: title-slide -->
 
 ## Contact & Resources
 
 **Questions?**
 
-📧 Email: 23f3004096@ds.study.iitm.ac.in
-📚 GitHub: [Your Repository]
-📖 Documentation: [Your Docs Site]
+📧 **Email:** 23f3004096@ds.study.iitm.ac.in  
+📚 **GitHub:** Version-controlled documentation  
+📖 **Marp:** Markdown presentation ecosystem
 
 ---
 
-## Thank You!
+![bg opacity:0.3](https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&q=80)
 
-**Remember:** Good documentation is like a good joke - if you have to explain it, it's not that good.
+# Thank You!
 
-*Keep your docs clear, concise, and current!*
+### Keep Your Documentation Clear, Concise, and Current
+
+**Contact:** 23f3004096@ds.study.iitm.ac.in
 
 ---
-```
-
-For example:
-```
-https://raw.githubusercontent.com/johnsmith/marp-presentation/main/slides.md
